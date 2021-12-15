@@ -45,6 +45,7 @@ def _get_student_submissions(block_id, course_id, locator):
             ),
         )
         for submission in final_submissions(submissions)
+        if user_by_anonymous_id(submission["student_id"])
     ]
 
 
